@@ -6,7 +6,6 @@
 
 cd $1
 
-#if [ -z "$(ls /dev/ttyACM0)" ] ; then 
 if [ -z "$(ls /dev/ttyUSB1)" ] & [ -z "$(ls /dev/ttyUSB0)" ] ; then 
   ino clean
   ino build
